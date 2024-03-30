@@ -21,6 +21,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Identify NaN values in y_train
 ``` python
 nan_indices = y_train.index[y_train.isnull()]
+smote=SMOTE()
 ```
 # Remove rows with NaN values
 ``` python
